@@ -13,7 +13,7 @@ public abstract class Singleton<T> : MonoBehaviour {
         }
     }
 
-    void OnEnable() {
+    protected virtual void OnEnable() {
         if (_singletons.ContainsKey(GetType())) {
             Destroy(this);
         } else {
