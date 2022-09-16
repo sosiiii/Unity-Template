@@ -8,7 +8,6 @@ public class TouchTrail : MonoBehaviour
 {
 
     private InputManager _inputManager;
-    private Camera _camera;
 
     private LineRenderer _lineRenderer;
 
@@ -18,7 +17,6 @@ public class TouchTrail : MonoBehaviour
     private void Awake()
     {
         _inputManager = InputManager.Instance;
-        _camera = Camera.main;
 
         _lineRenderer = GetComponent<LineRenderer>();
         _lineRenderer.enabled = false;
